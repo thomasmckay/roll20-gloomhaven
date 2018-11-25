@@ -1,3 +1,4 @@
+/* eslint indent: ["off"] */
 // https://github.com/johreh/gloomycompanion/blob/master/scenarios.js
 var GloomhavenScenariosModule = GloomhavenScenariosModule || (function() {
 SPECIAL_RULES =
@@ -774,7 +775,7 @@ SCENARIO_DEFINITIONS =
     ];
 
     return {
-        SCENARIO_DEFINITIONS: SCENARIO_DEFINITIONS;
+        SCENARIO_DEFINITIONS: SCENARIO_DEFINITIONS
     };
 }());
 
