@@ -1,0 +1,17 @@
+{
+  "name": "roll20-gloomhaven",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmckay/roll20-gloomhaven.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasmckay/roll20-gloomhaven/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-react": "^7.4.0"
+  }
+}
