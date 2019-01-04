@@ -88,16 +88,13 @@ var Gloomhaven = (function () {
         var command = tokens[1];
         var args = tokens.slice(2);
 
-        write("Command: " + command, msg.who, "", "OP");
-        write("Args: " + args, msg.who, "", "OP");
-
         if (command === undefined) {
             showHelp(msg.who);
             return;
         }
 
         if (GLOOMHAVEN_COMMANDS[command] === undefined) {
-            write("Unrecognized command '" + command + "'", msg.who, "", "OP");
+            write("Unrecognized command '" + command + "'", msg.who, "", "Gloomhaven");
             showHelp(msg.who);
             return;
         }
