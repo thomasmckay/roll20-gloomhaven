@@ -41,8 +41,8 @@ var GloomhavenDeckBuilderCommand = {
             });
         }
 
-        // Remove all the current cards from deck
         if (addCard == false) {
+            // Remove all the current cards from deck
             var cards = findObjs({_deckid: deck.get("id")});
             for (i = 0; i < cards.length; i++) {
                 cards[i].remove();
