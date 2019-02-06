@@ -19,8 +19,8 @@ $(BUILD_DIR)/build.js: $(GLOOMHAVEN_FILES)
 	$(RM) $@
 	cat $^ >> $@
 
-GAME=3922546
-SCRIPT=313710
+GAME=4102148
+SCRIPT=332168
 upload:
 	cd build && \
 	rm -f roll20*.cookies && \

@@ -11,7 +11,7 @@ var GloomhavenDeckBuilderCommand = {
             return(args.slice(1).join(" "));
         };
 
-        var _getDeck = function(msg, deckName) {
+        var _getDeck = function(deckName) {
             var deck = findObjs({type: "deck", name: deckName});
             if (deck.length !== 0) {
                 deck = deck[0];
@@ -31,7 +31,7 @@ var GloomhavenDeckBuilderCommand = {
             }
 
             var card = getObj(msg.selected[0]._type, msg.selected[0]._id);
-            var deck = _getDeck(msg, deckName);
+            var deck = _getDeck(deckName);
             createObj("card", {
                 _deckid: deck.get("id"),
                 name: card.get("name"),
