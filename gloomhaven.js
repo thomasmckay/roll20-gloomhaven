@@ -39,27 +39,27 @@ var Gloomhaven = (function () {
         var args = Array.prototype.slice.call(arguments, 0);
         var argl = args.length;
 
-        if (typeof f !== 'string') {
+        if (typeof f !== "string") {
             var objects = [];
             while (argl--) {
                 objects.unshift(args[i].toString());
             }
 
-            return objects.join(' ');
+            return objects.join(" ");
         }
 
         var i = 1;
         var str = String(f).replace(formatRegexp, function (x) {
-            if (x === '%%') {
-                return '%';
+            if (x === "%%") {
+                return "%";
             }
             if (i >= args) {
                 return x;
             }
             switch (x) {
-            case '%s' : return String(args[i++]);
-            case '%d' : return Number(args[i++]);
-            case '%j' : return JSON.stringify(args[i++]);
+            case "%s" : return String(args[i++]);
+            case "%d" : return Number(args[i++]);
+            case "%j" : return JSON.stringify(args[i++]);
             default:
                 return x;
             }
@@ -68,8 +68,8 @@ var Gloomhaven = (function () {
         var x;
         while (i++ < argl) {
             x = args[i];
-            if (x === null || typeof x !== 'object') {
-                str = [str, x].join(' ')
+            if (x === null || typeof x !== "object") {
+                str = [str, x].join(" ");
             } else {
                 str += [str, x.toString()].join();
             }
@@ -114,6 +114,7 @@ var Gloomhaven = (function () {
 
     function registerCommands() {
         /* eslint-disable no-undef */
+        GLOOMHAVEN_COMMANDS["query"] = GloomhavenQueryCommand;
         GLOOMHAVEN_COMMANDS["set-level"] = GloomhavenSetLevelCommand;
         GLOOMHAVEN_COMMANDS["monster-card"] = GloomhavenMonsterCardCommand;
         GLOOMHAVEN_COMMANDS["build-deck"] = GloomhavenDeckBuilderCommand;
@@ -129,8 +130,7 @@ var Gloomhaven = (function () {
                 write = Shell.write;
             }
             /* eslint-enable no-func-assign */
-        }
-        else{
+        } else {
             on("chat:message", handleChatMessage);
         }
     }

@@ -6,6 +6,7 @@ GLOOMHAVEN_FILES = \
 	gloomhaven_deck_builder.js \
 	gloomhaven_monster_card.js \
 	gloomhaven_monster_stats.js \
+	gloomhaven_query.js \
 	gloomhaven_set_level.js
 
 #BUILD_FILES := $(addprefix $(BUILD_DIR)/, $(GLOOMHAVEN_FILES))
@@ -19,8 +20,10 @@ $(BUILD_DIR)/build.js: $(GLOOMHAVEN_FILES)
 	$(RM) $@
 	cat $^ >> $@
 
-GAME=4102148
-SCRIPT=332168
+# GAME from https://app.roll20.net/campaigns/scripts/3898955
+GAME=3898955
+# SCRIPT from inspect tab of script in browser <a data-toggle="tab" href="#script-329023 >
+SCRIPT=329023
 upload:
 	cd build && \
 	rm -f roll20*.cookies && \
