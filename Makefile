@@ -21,9 +21,9 @@ $(BUILD_DIR)/build.js: $(GLOOMHAVEN_FILES)
 	cat $^ >> $@
 
 # GAME from https://app.roll20.net/campaigns/scripts/3898955
-GAME=3898955
+GAME=4102148
 # SCRIPT from inspect tab of script in browser <a data-toggle="tab" href="#script-329023 >
-SCRIPT=329023
+SCRIPT=332168
 upload:
 	cd build && \
 	rm -f roll20*.cookies && \

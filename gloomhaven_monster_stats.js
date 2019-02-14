@@ -8284,6 +8284,10 @@ var GloomhavenMonsterStatsModule = GloomhavenMonsterStatsModule || (function() {
         normal: "https://s3.amazonaws.com/files.d20.io/images/66317416/hzBD3OLjHr4FgCXaHB_GpA/thumb.png?1541370190",
         elite: "https://s3.amazonaws.com/files.d20.io/images/66622514/E3pJQ9Iq-AM9zFRYuUzZfw/thumb.png?1541808793"
     };
+    MONSTER_STATS["monsters"]["Ancient Artillery"]["imgsrc"] = {
+        normal: "https://s3.amazonaws.com/files.d20.io/images/73245991/Hsiv_ZmluklkxZ9y07qkyg/thumb.png?1549497759",
+        elite: "https://s3.amazonaws.com/files.d20.io/images/73249386/cHKmLORH557HGI8dJ4JbBA/thumb.png?1549500407"
+    };
 
     return {
         MONSTER_STATS: MONSTER_STATS

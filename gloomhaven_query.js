@@ -10,7 +10,7 @@ var GloomhavenQueryCommand = {
             return;
         }
 
-        value = obj.get(args[1]);
+        value = obj.get(args[0]);
 
         Gloomhaven.write(Gloomhaven.sprintf("Property: '%s' = '%s'", args[0], value), msg.who, "", "GH query");
     }
