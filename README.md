@@ -16,3 +16,7 @@ The *size* of the image token will determine the size of the cards when played. 
 All other graphic objects on the page without the *name* attribute equal to the deck name will be used as the cards in the deck. (*Note:* Since running *build-deck* updates existing decks, adding or removing cards during game play is simply a matter of changing the images on the page.)
 
 ![Card deck page](/documentation/build-deck.png)
+
+## Character Sheet
+
+![codepen.io](https://codepen.io/thomasmckay/pen/QYeaWX)

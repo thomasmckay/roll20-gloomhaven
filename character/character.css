@@ -1,0 +1,12 @@
+
+.charsheet {
+    font-family: "Pirata One";
+    padding: 0px;
+}
+
+.sheet-section {
+    line-height: 1;
+    border: 40px solid black;
+    border-image-source: url(https://s3.amazonaws.com/files.d20.io/images/66687670/0BjzR71SiqpYfQwFNghZjQ/max.png?1541882494);
+    border-image-slice: 40;
+}
